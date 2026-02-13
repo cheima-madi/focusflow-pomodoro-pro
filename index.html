@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PomoCute • Focus & Rest</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+    }
+    .font-mono {
+      font-family: 'JetBrains+Mono', monospace;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    @keyframes bounce-slow {
+      0%, 100% { transform: translateY(-5%); }
+      50% { transform: translateY(5%); }
+    }
+    .animate-bounce-slow {
+      animation: bounce-slow 3s ease-in-out infinite;
+    }
+    .cute-shadow {
+      box-shadow: 0 10px 25px -5px rgba(255, 143, 163, 0.3);
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            strawberry: {
+              light: '#ffccd5',
+              DEFAULT: '#ff8fa3',
+              dark: '#c9184a'
+            },
+            matcha: {
+              light: '#d8f3dc',
+              DEFAULT: '#95d5b2',
+              dark: '#40916c'
+            },
+            latte: {
+              light: '#f8edeb',
+              DEFAULT: '#fae1dd',
+              dark: '#ece4db'
+            }
+          }
+        }
+      }
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-[#fff0f3] text-slate-700 transition-colors duration-500 dark:bg-[#1a1a2e] dark:text-pink-100">
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

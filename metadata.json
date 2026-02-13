@@ -1,0 +1,7 @@
+{
+  "name": "FocusFlow Pomodoro Pro",
+  "description": "A professional, minimalist Pomodoro timer built with React, Tailwind CSS, and Framer Motion. Features customizable focus/break intervals, session tracking, dark/light mode, and persistent storage.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
